@@ -1,9 +1,10 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import LocationComponent from "./components/LocationComponent.tsx";
+import TimerComponent from "./components/Timer.component.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <LocationComponent />
+    {/* <LocationComponent /> */}
+    <TimerComponent />
   </StrictMode>,
 );
