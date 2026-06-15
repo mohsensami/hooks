@@ -1,3 +1,10 @@
 export default function App() {
-  return <div>App</div>;
+  const debounce = useDebounce(1000);
+
+  const handleSearch = debounce(() => {
+    // Executes after 1000ms
+  });
+  return (
+    <input onChange={handleSearch} /> 
+  );
 }
